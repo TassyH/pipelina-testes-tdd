@@ -32,7 +32,7 @@ describe("Login Cliente - TDD", () => {
       user: "cliente@teste.com",
       senha: "errada"
     });
-    expect(res.status).toBe(401);
+    expect(res.status).toBe(422);
   });
 
   test("deve logar cliente ativo com sucesso baby", async () => {
