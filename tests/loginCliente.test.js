@@ -35,7 +35,7 @@ describe("Login Cliente - TDD", () => {
     expect(res.status).toBe(401);
   });
 
-  test("deve logar cliente ativo com sucesso", async () => {
+  test("deve logar cliente ativo com sucesso baby", async () => {
     const res = await request(app).post("/login/cliente").send({
       user: "cliente@teste.com",
       senha: "123456"
